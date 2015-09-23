@@ -1,0 +1,494 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  background: #fefefe; }
+
+#house {
+  position: relative;
+  top: 3rem;
+  left: 2rem;
+  width: 873px;
+  height: 600px; }
+  #house .room {
+    position: absolute;
+    border: 10px solid #332121;
+    background-size: cover !important;
+    z-index: 200 !important; }
+    #house .room:nth-child(2) {
+      border: 5px solid #613f3f; }
+  #house .overlay {
+    position: absolute;
+    z-index: 700 !important;
+    pointer-events: none; }
+
+.part {
+  position: absolute;
+  z-index: 500; }
+
+.pointer {
+  cursor: pointer; }
+
+.transparent {
+  opacity: 0 !important; }
+
+.door, .window, .radiator {
+  position: absolute; }
+
+.closed-window {
+  z-index: 760; }
+
+.door, .closed-window, .radiator {
+  z-index: 760;
+  cursor: pointer; }
+
+#room1 .door0 {
+  top: 187px;
+  left: -45px; }
+#room1 .door-mat {
+  width: 20px;
+  height: 50px;
+  background-image: url("../img/carpet.jpg");
+  background-size: cover;
+  bottom: 5px;
+  left: 5px; }
+#room1 .coats {
+  bottom: 0;
+  left: 40px; }
+
+#room2 .plant {
+  bottom: 0;
+  left: 0; }
+#room2 .chair {
+  right: 5px; }
+#room2 .garden-table {
+  top: 60px;
+  left: 20px; }
+
+#room3 .door0 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 176.5px;
+  left: 37px; }
+#room3 .window {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#room3 .window0 {
+  top: 55px;
+  right: -10px; }
+#room3 .window1 {
+  top: 110px;
+  right: -10px; }
+#room3 .open-window0 {
+  top: 10px;
+  right: -10px; }
+#room3 .open-window1 {
+  top: 65px;
+  right: -10px; }
+#room3 .radiator0 {
+  right: 0;
+  top: 53px; }
+#room3 .bed {
+  left: 130px;
+  bottom: 0; }
+#room3 .bedtable {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/parket2.png");
+  bottom: 0; }
+  #room3 .bedtable.bedtable1 {
+    left: 95px; }
+  #room3 .bedtable.bedtable2 {
+    left: 230px; }
+#room3 .commode {
+  width: 50px;
+  height: 100px;
+  background-image: url("../img/parket2.png");
+  bottom: 0;
+  right: 0; }
+#room3 .laundry {
+  right: 130px; }
+#room3 .closet {
+  width: 55px;
+  height: 140px;
+  background-image: url("../img/parket3.jpg"); }
+#room3 .plant {
+  right: 0; }
+#room3 .bedlamp {
+  width: 20px;
+  bottom: 3px; }
+  #room3 .bedlamp.lamp1 {
+    left: 99px; }
+  #room3 .bedlamp.lamp2 {
+    left: 236px; }
+#room3 .jewellery {
+  right: 5px;
+  bottom: 70px; }
+#room3 .roses {
+  right: 0;
+  bottom: 0; }
+#room3 .carpet {
+  width: 30px;
+  height: 80px;
+  background-image: url("../img/carpet.JPG");
+  background-size: cover;
+  bottom: 40px; }
+  #room3 .carpet.carpet1 {
+    left: 95px; }
+  #room3 .carpet.carpet2 {
+    left: 230px; }
+
+#room4 .door0 {
+  top: 30px;
+  left: -45px; }
+#room4 .door1 {
+  top: 85px;
+  left: -45px; }
+#room4 .door2 {
+  top: 204px;
+  left: 349.5px; }
+#room4 .window0 {
+  top: 197px;
+  left: -10px; }
+#room4 .window1 {
+  top: 252px;
+  left: -10px; }
+#room4 .open-window0 {
+  top: 148px;
+  left: -10px; }
+#room4 .open-window1 {
+  top: 203px;
+  left: -10px; }
+#room4 .radiator0 {
+  left: 0;
+  bottom: 28px; }
+#room4 .radiator1 {
+  left: 0;
+  bottom: 77px; }
+#room4 .dining-table {
+  width: 60px;
+  height: 120px;
+  background-image: url("../img/parket2.png");
+  top: 0px;
+  right: 40px; }
+#room4 .chair.chair1, #room4 .chair.chair2 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 5px; }
+#room4 .chair.chair3, #room4 .chair.chair4 {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  right: 105px; }
+#room4 .chair.chair1, #room4 .chair.chair3 {
+  top: 5px; }
+#room4 .chair.chair2, #room4 .chair.chair4 {
+  top: 65px; }
+#room4 .chair.chair5 {
+  -webkit-transform: rotate(175deg);
+  transform: rotate(175deg);
+  right: 50px;
+  top: 130px; }
+#room4 .plant1 {
+  left: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+#room4 .plant2 {
+  left: 180px;
+  bottom: 50px; }
+#room4 .shelf {
+  width: 140px;
+  height: 25px;
+  background-image: url("../img/parket3.jpg");
+  bottom: 0;
+  right: 0; }
+#room4 .couch {
+  bottom: -1px;
+  left: 30px; }
+#room4 .couch-table {
+  width: 76px;
+  height: 76px;
+  background-image: url("../img/dark_pattern.png");
+  border-radius: 50%;
+  top: 170px;
+  left: 50px;
+  background-size: 150px 150px; }
+#room4 .ikea-lamp {
+  bottom: 5px;
+  left: 35px; }
+#room4 .ikea-bulp {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: 70px;
+  top: 155px; }
+#room4 .tv-table {
+  width: 100px;
+  height: 40px;
+  background-image: url("../img/parket.png");
+  left: 70px; }
+#room4 .tv {
+  left: 75px;
+  top: 8px; }
+
+.flickering {
+  -webkit-animation: flickering 3s alternate infinite;
+  animation: flickering 3s alternate infinite; }
+
+@-webkit-keyframes flickering {
+  0% {
+    box-shadow: 0px 10px 10px 0px rgba(220, 20, 60, 0.3); }
+  10% {
+    box-shadow: 0px 10px 10px 2px rgba(32, 178, 170, 0.4); }
+  15% {
+    box-shadow: 0px 10px 10px 0px rgba(255, 255, 0, 0.3); }
+  25% {
+    box-shadow: 0px 10px 10px 0px rgba(255, 0, 0, 0.6); }
+  45% {
+    box-shadow: 0px 10px 10px 2px rgba(173, 255, 47, 0.6); }
+  55% {
+    box-shadow: 0px 10px 10px 0px rgba(0, 191, 255, 0.2); }
+  60% {
+    box-shadow: 0px 10px 10px 0px rgba(255, 255, 102, 0.3); }
+  75% {
+    box-shadow: 0px 10px 10px 0px rgba(34, 139, 34, 0.6); }
+  85% {
+    box-shadow: 0px 10px 10px 2px rgba(255, 255, 0, 0.3); }
+  90% {
+    box-shadow: 0px 10px 10px 0px rgba(255, 69, 0, 0.5); }
+  100% {
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 128, 0.3); } }
+@keyframes flickering {
+  0% {
+    box-shadow: 0px 10px 10px 0px rgba(220, 20, 60, 0.3); }
+  10% {
+    box-shadow: 0px 10px 10px 2px rgba(32, 178, 170, 0.4); }
+  15% {
+    box-shadow: 0px 10px 10px 0px rgba(255, 255, 0, 0.3); }
+  25% {
+    box-shadow: 0px 10px 10px 0px rgba(255, 0, 0, 0.6); }
+  45% {
+    box-shadow: 0px 10px 10px 2px rgba(173, 255, 47, 0.6); }
+  55% {
+    box-shadow: 0px 10px 10px 0px rgba(0, 191, 255, 0.2); }
+  60% {
+    box-shadow: 0px 10px 10px 0px rgba(255, 255, 102, 0.3); }
+  75% {
+    box-shadow: 0px 10px 10px 0px rgba(34, 139, 34, 0.6); }
+  85% {
+    box-shadow: 0px 10px 10px 2px rgba(255, 255, 0, 0.3); }
+  90% {
+    box-shadow: 0px 10px 10px 0px rgba(255, 69, 0, 0.5); }
+  100% {
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 128, 0.3); } }
+#room5 .door0 {
+  top: 30px;
+  left: -45px; }
+#room5 .window {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#room5 .window0 {
+  top: 25px;
+  right: -10px; }
+#room5 .open-window0 {
+  top: -21px;
+  right: -10px; }
+#room5 .radiator0 {
+  right: 0;
+  top: 25px; }
+#room5 .desk {
+  width: 50px;
+  height: 100%;
+  background-image: url("../img/parket2.png");
+  right: 15px; }
+#room5 .shelf {
+  width: 100px;
+  height: 20px;
+  background-image: url("../img/parket3.jpg"); }
+  #room5 .shelf.shelf1 {
+    width: 70px; }
+  #room5 .shelf.shelf2 {
+    bottom: 0; }
+#room5 .plant {
+  width: 35px;
+  left: 75px; }
+#room5 .office-chair {
+  top: 25px;
+  right: 68px; }
+#room5 .mouse {
+  right: 40px;
+  bottom: 18px; }
+#room5 .keyboard {
+  right: 45px;
+  top: 40px; }
+#room5 .mac {
+  right: 20px; }
+
+#room6 .door0 {
+  top: 57px;
+  left: -45px; }
+#room6 .door1 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 174.5px;
+  left: 87px; }
+#room6 .window {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#room6 .window0 {
+  top: 50px;
+  right: -10px; }
+#room6 .window1 {
+  top: 105px;
+  right: -10px; }
+#room6 .open-window0 {
+  top: 5px;
+  right: -10px; }
+#room6 .open-window1 {
+  top: 60px;
+  right: -10px; }
+#room6 .radiator0 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 93px;
+  left: 25px; }
+#room6 .kitchen-counter {
+  width: 100%;
+  height: 40px;
+  background-image: url("../img/parket2.png");
+  top: 0px; }
+  #room6 .kitchen-counter:before, #room6 .kitchen-counter:after {
+    content: "";
+    position: absolute;
+    display: block; }
+  #room6 .kitchen-counter:before {
+    width: 20px;
+    height: 88px;
+    background-image: url("../img/parket2.png");
+    top: 125px;
+    left: 30px; }
+  #room6 .kitchen-counter:after {
+    width: 40px;
+    height: 213px;
+    background-image: url("../img/parket2.png");
+    top: 0;
+    right: 0; }
+#room6 .stove {
+  left: 80px; }
+#room6 .fruitbowl {
+  left: 10px; }
+#room6 .microwave {
+  right: 5px;
+  bottom: 10px; }
+#room6 .sink {
+  right: 0;
+  top: 60px; }
+
+#room7 .door0 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: -47.5px;
+  left: 14px; }
+#room7 .toilet {
+  right: 0; }
+#room7 .tub {
+  bottom: 0; }
+
+.control-panel {
+  background: #bfd3f8; }
+
+.drag-controls i {
+  font-size: 3rem; }
+  .drag-controls i.electronics {
+    color: darkorange; }
+  .drag-controls i.water {
+    color: steelblue; }
+  .drag-controls i.radiator {
+    color: maroon; }
+  .drag-controls i.bulp {
+    color: gold; }
+
+.navbar {
+  background: cornflowerblue;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0; }
+  .navbar .logo {
+    color: #fefefe;
+    font-size: 2rem;
+    line-height: 5rem; }
+  .navbar .options-bar {
+    font-size: 2.5rem;
+    color: #fefefe;
+    margin-top: 10px; }
+    .navbar .options-bar li {
+      margin-right: 1rem; }
+      .navbar .options-bar li:first-child {
+        margin-right: 9rem; }
+  .navbar .user {
+    font-size: 2rem;
+    font-weight: 200;
+    position: relative; }
+    .navbar .user span {
+      cursor: pointer; }
+      .navbar .user span:hover {
+        text-decoration: underline; }
+    .navbar .user .profilpic {
+      height: 51px;
+      border-radius: 50%;
+      margin-top: -11px; }
+    .navbar .user p {
+      display: none;
+      background: #92b4f2;
+      width: 75px;
+      position: absolute;
+      top: 40px;
+      left: 57px;
+      color: white;
+      font-size: 1.5rem;
+      padding: 5px 10px; }
+
+.login {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(245, 245, 245, 0.85); }
+  .login .form {
+    position: absolute;
+    width: 350px;
+    left: calc(50% - 175px);
+    top: 20%;
+    background: #bfd3f8;
+    border-radius: 5px;
+    padding: 28px; }
+    .login .form h2 {
+      text-align: center;
+      color: white; }
+    .login .form p {
+      font-size: 2rem;
+      color: #fefefe; }
+    .login .form input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px dashed #fefefe;
+      width: 150px;
+      outline: none; }
+    .login .form button {
+      display: block;
+      margin: 3rem auto;
+      width: 100px;
+      background: #fefefe;
+      border: none;
+      color: cornflowerblue; }
+
+/*# sourceMappingURL=style.css.map */
